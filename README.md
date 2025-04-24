@@ -1,27 +1,28 @@
-🔐 Project-3: Automated Penetration Testing Script
-This script automates key steps in a penetration test with interactive user input. Its main goal is to simplify scanning, enumeration, and brute-force tasks for security assessments.
+🛡️ Project-3: Automated Penetration Testing Script
+A user-guided Bash script designed to automate essential penetration testing tasks like scanning, enumeration, and brute-force attacks.
 
-Key Features:
-Root Check
-Ensures the script runs with root privileges; exits otherwise.
+🔑 Core Features:
+1️⃣ 👤 Root Check
+Ensures the script runs with root privileges. Exits if not.
 
-Results Directory
-Prompts the user for a results folder and creates it if missing.
+2️⃣ 📁 Results Directory Setup
+Asks for a folder to store results — creates it if it doesn’t exist.
 
-Password List Option
-Allows using a default or custom password list for brute-force attacks. Downloads user_pass.txt if built-in list is selected.
+3️⃣ 🔐 Password List Selection
+Choose between a built-in password list (downloaded from GitHub) or a custom one.
 
-Scan Modes: Basic or Full
+4️⃣ 🔍 Scan Modes: Basic or Full
 
-Basic: Runs nmap and masscan for quick scans.
+🧪 Basic: Quick nmap + masscan scans.
 
-Full: Includes deep nmap scan, brute-force with medusa, CVE extraction, and searchsploit for known exploits.
+🛠️ Full: Deep nmap scan, medusa brute-force, CVE extraction + searchsploit.
 
-Post-Scan Tools
-Lets users view results, search reports with grep, or zip all outputs.
+5️⃣ 📄 Post-Scan Options
+View files, search with grep, or zip all results.
 
-User-Friendly Interaction
-Step-by-step questions guide the user through setup and execution.
+6️⃣ 💬 Interactive Flow
+Prompts the user at each step (e.g., IP address, scan type, continue?).
 
-Error Handling
-Validates IP format and blocks non-root execution.
+7️⃣ ⚠️ Error Handling
+Validates IP format and blocks non-root users.
+
